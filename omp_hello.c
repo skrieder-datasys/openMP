@@ -23,8 +23,9 @@ int nthreads, tid;
   {
 
   /* Obtain thread number */
-  tid = omp_get_thread_num();
-  printf("Hello World from thread = %d\n", tid);
+    tid = omp_get_thread_num();
+    //tid = 8;
+    printf("Hello World from thread = %d\n", tid);
 
   /* Only master thread does this */
   if (tid == 0) 
